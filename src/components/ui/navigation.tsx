@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import {Link} from "react-router-dom";
-
+import logo from "../../assets/logo.png"
+import logosquare from "../../assets/logo_square.svg"
 export const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,14 +15,14 @@ export const Navigation: React.FC = () => {
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-adventure rounded-lg flex items-center justify-center">
               <img
-                src="/logo_square.svg"
+                src={logosquare}
                 alt="Logo"
                 className="w-full h-full object-contain"
               />
             </div>
             <img
               className="text-xl font-bold bg-gradient-adventure bg-clip-text text-transparent"
-              src="/logo.png"
+              src={logo}
               alt="Logo Text"
             />
           </div>
