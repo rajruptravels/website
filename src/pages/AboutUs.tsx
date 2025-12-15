@@ -4,8 +4,23 @@ import { Footer } from '@/components/sections/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Users, Award, MapPin, Heart, Star, Shield, Globe, Clock } from 'lucide-react';
-import Ssp from "../../public/about-us/ssp.png"
+import Ssp from "@/assets/about-us/ssp.png";
+
+import { usePageMeta } from "@/hooks/usePageMeta";
+
 const AboutUs = () => {
+    usePageMeta({
+    title: "Rajrup Travels | About Us",
+    description:
+      "Explore India with Rajrup Travels. 15+ years experience in Himachal, Andaman, Darjeeling & adventure tours.",
+    keywords:
+      "Rajrup Travels, India tour packages, adventure tours, travel agency",
+    ogTitle: "Rajrup Travels - Adventure Tours & Travel Packages",
+    ogDescription:
+      "Book trusted tour packages across India with 15+ years experience.",
+    ogImage: "https://rajruptravels.com/images/home-og.jpg",
+  });
+
   const stats = [
     { icon: Users, label: 'Happy Travelers', value: '5,000+' },
     { icon: MapPin, label: 'Destinations', value: '200+' },

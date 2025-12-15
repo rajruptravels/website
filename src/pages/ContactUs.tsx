@@ -6,8 +6,20 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-
+import { usePageMeta } from "@/hooks/usePageMeta";
 const Contact: React.FC = () => {
+    usePageMeta({
+    title: "Rajrup Travels | Contact Us",
+    description:
+      "Contact Rajrup Travels for tour bookings, custom travel packages, and expert travel assistance across India.",
+    keywords:
+      "Contact Rajrup Travels, travel agency contact, tour booking India, travel support",
+    ogTitle: "Contact Rajrup Travels - Travel Experts",
+    ogDescription:
+      "Get in touch with Rajrup Travels for customized tour packages and travel assistance.",
+    ogImage: "https://rajruptravels.com/images/contact-og.jpg",
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

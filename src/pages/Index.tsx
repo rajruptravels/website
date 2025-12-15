@@ -8,6 +8,7 @@ import { StatsSection } from '@/components/sections/StatsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { Footer } from '@/components/sections/Footer';
 
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">

@@ -7,10 +7,20 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Star, Clock, MapPin, Check, X } from 'lucide-react';
 import destinationsData from '@/data/destinations';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 const DestinationDetail = () => {
   const { id } = useParams<{ id: string }>();
   const destination = destinationsData.find(dest => dest.id === id);
+  usePageMeta({
+    title: `RajRup Travels | ${destination.name}`,
+    description: destination.description,
+    keywords: destination.highlights.join(", "),
+    ogTitle: `RajRup Travels | ${destination.name}`,
+    ogDescription:destination.description,
+    ogImage: destination.image,
+  });
+
 
   if (!destination) {
     return (
