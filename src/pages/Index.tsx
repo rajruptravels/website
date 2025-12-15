@@ -10,6 +10,7 @@ import { Footer } from '@/components/sections/Footer';
 
 const Index = () => {
   return (
+    {console.log("Hello")}
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
