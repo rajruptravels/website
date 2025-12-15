@@ -12,14 +12,14 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-adventure rounded-lg flex items-center justify-center">
                               <img
-                src="/src/assets/logo_square.svg"
+                src="/public/logo_square.svg"
                 alt="Logo"
                 className="w-full h-full object-contain"
               />
               </div>
             <img
               className="text-xl font-bold bg-gradient-adventure bg-clip-text text-transparent"
-              src="/src/assets/logo.png"
+              src="/public/logo.png"
               alt="Logo Text"
             />
             </div>

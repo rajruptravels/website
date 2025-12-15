@@ -4,7 +4,7 @@ import { Footer } from '@/components/sections/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Users, Award, MapPin, Heart, Star, Shield, Globe, Clock } from 'lucide-react';
-import Ssp from "@/assets/about-us/ssp.png"
+import Ssp from "../../public/about-us/ssp.png"
 const AboutUs = () => {
   const stats = [
     { icon: Users, label: 'Happy Travelers', value: '5,000+' },

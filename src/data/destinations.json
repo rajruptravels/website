@@ -4,7 +4,7 @@
   "id": "sikkim",
   "name": "Sikkim",
   "type": "national",
-  "image": "/src/assets/destinations/sikkim.jpg",
+  "image": "/public/destinations/sikkim.jpg",
   "price": "₹15,000",
   "duration": "7",
   "rating": 4.7,
@@ -12,7 +12,7 @@
   "description": "Explore the serene beauty of East and North Sikkim including Aritar, Zuluk, Nathang Valley, Gangtok, Lachen, Lachung, and Gurudongmar Lake with full food and transport facilities.",
   "highlights": ["Aritar", "Zuluk", "Nathang Valley", "Gangtok", "Lachen", "Lachung", "Gurudongmar Lake"],
   "featured": true,
-  "gallery": ["/src/assets/sikkim-lake.jpg"],
+  "gallery": ["/public/sikkim-lake.jpg"],
   "itinerary": [
     { "day": 1, "title": "Arrival at NJP - Transfer to Aritar", "description": "Pick up from NJP and transfer to Aritar. Enjoy the beauty of Lampokhri Lake. Night stay at Aritar." },
     { "day": 2, "title": "Aritar to Zuluk/Padamchen", "description": "After breakfast, check out and make permits at Rongli Bazaar. Visit Zuluk, Zig-Zag Road View Point, Thambi View Point, Nathang Valley, Old Baba Mandir, Tukla Valley, Elephanta Lake, Chhangu Lake (subject to permission). Night stay at Zuluk." },
@@ -44,7 +44,7 @@
   "id": "bangkok",
   "name": "Bangkok",
   "type": "international",
-  "image": "/src/assets/destinations/thailand.jpg",
+  "image": "/public/destinations/thailand.jpg",
   "price": "₹49,999",
   "duration": "6",
   "rating": 4.6,
@@ -60,7 +60,7 @@
     "Safari World & Marine Park"
   ],
   "featured": true,
-  "gallery": ["/src/assets/thailand.jpg"],
+  "gallery": ["/public/thailand.jpg"],
   "itinerary": [
     {
       "day": 1,
@@ -118,7 +118,7 @@
   "id": "unseen-darjeeling",
   "name": "Unseen Darjeeling",
   "type": "west-bengal",
-  "image": "/src/assets/destinations/unseen-darjeeling.jpg",
+  "image": "/public/destinations/unseen-darjeeling.jpg",
   "price": "₹11,999",
   "duration": "6",
   "rating": 4.7,
@@ -133,7 +133,7 @@
     "Takdah & Tinchuley"
   ],
   "featured": true,
-  "gallery": ["/src/assets/north-bengal.jpg"],
+  "gallery": ["/public/north-bengal.jpg"],
   "itinerary": [
     {
       "day": 1,
@@ -189,7 +189,7 @@
   "id": "offbeat-north-bengal-hills",
   "name": "Offbeat North Bengal Hills",
   "type": "west-bengal",
-  "image": "/src/assets/destinations/offbeat-north-bengal-hills.jpeg",
+  "image": "/public/destinations/offbeat-north-bengal-hills.jpeg",
   "price": "₹11,999",
   "duration": "5",
   "rating": 4.8,
@@ -204,7 +204,7 @@
     "Kurseong"
   ],
   "featured": true,
-  "gallery": ["/src/assets/offbeat-darjeeling.jpg"],
+  "gallery": ["/public/offbeat-darjeeling.jpg"],
   "itinerary": [
     {
       "day": 1,
@@ -262,7 +262,7 @@
   "id": "darjeeling",
   "name": "Darjeeling ",
   "type": "west-bengal",
-  "image": "/src/assets/destinations/darjelling.jpg",
+  "image": "/public/destinations/darjelling.jpg",
   "price":"₹11,999",
   "duration": "4",
   "rating": 4.8,
@@ -279,7 +279,7 @@
     "Tinchuley"
   ],
   "featured": true,
-  "gallery": ["/src/assets/unseen-darjeeling.jpg"],
+  "gallery": ["/public/unseen-darjeeling.jpg"],
   "itinerary": [
     {
       "day": 1,
@@ -334,7 +334,7 @@
   "id": "amazing-thailand",
   "name": "Amazing Thailand",
   "type": "international",
-  "image": "/src/assets/destinations/amazing-thailand-tour.jpeg",
+  "image": "/public/destinations/amazing-thailand-tour.jpeg",
   "price":"40,000",
   "duration": "9",
   "rating": 4.9,
@@ -352,10 +352,10 @@
   ],
   "featured": true,
   "gallery": [
-    "/src/assets/phuket.jpg",
-    "/src/assets/krabi.jpg",
-    "/src/assets/pattaya.jpg",
-    "/src/assets/bangkok.jpg"
+    "/public/phuket.jpg",
+    "/public/krabi.jpg",
+    "/public/pattaya.jpg",
+    "/public/bangkok.jpg"
   ],
   "itinerary": [
     {
@@ -445,7 +445,7 @@
   "id": "srilanka",
   "name": "Sri Lanka",
   "type": "international",
-  "image": "/src/assets/destinations/srilanka.jpeg",
+  "image": "/public/destinations/srilanka.jpeg",
   "price": "75000",
   "duration": "8",
   "rating": 4.9,
@@ -460,11 +460,11 @@
   ],
   "featured": true,
   "gallery": [
-    "/src/assets/kandy.jpg",
-    "/src/assets/ella.jpg",
-    "/src/assets/mirissa.jpg",
-    "/src/assets/bentota.jpg",
-    "/src/assets/colombo.jpg"
+    "/public/kandy.jpg",
+    "/public/ella.jpg",
+    "/public/mirissa.jpg",
+    "/public/bentota.jpg",
+    "/public/colombo.jpg"
   ],
   "itinerary": [
     {
@@ -552,7 +552,7 @@
   "id": "rajasthan",
   "name": "Rajasthan",
   "type": "national",
-  "image": "/src/assets/destinations/rajasthan.jpeg",
+  "image": "/public/destinations/rajasthan.jpeg",
   "price": "30000",
   "duration": "13",
   "rating": 4.7,
@@ -566,13 +566,13 @@
   ],
   "featured": true,
   "gallery": [
-    "/src/assets/jaipur.jpg",
-    "/src/assets/pushkar.jpg",
-    "/src/assets/udaipur.jpg",
-    "/src/assets/mountabu.jpg",
-    "/src/assets/jodhpur.jpg",
-    "/src/assets/jaisalmer.jpg",
-    "/src/assets/bikaner.jpg"
+    "/public/jaipur.jpg",
+    "/public/pushkar.jpg",
+    "/public/udaipur.jpg",
+    "/public/mountabu.jpg",
+    "/public/jodhpur.jpg",
+    "/public/jaisalmer.jpg",
+    "/public/bikaner.jpg"
   ],
   "itinerary": [
     {
@@ -669,7 +669,7 @@
   "id": "odisha",
   "name": "Odisha",
   "type": "national",
-  "image": "/src/assets/destinations/puri.jpg",
+  "image": "/public/destinations/puri.jpg",
   "price": "10999",
   "duration": "7",
   "rating": 4.6,
@@ -683,11 +683,11 @@
   ],
   "featured": true,
   "gallery": [
-    "/src/assets/puri.jpg",
-    "/src/assets/konark.jpg",
-    "/src/assets/nandankanan.jpg",
-    "/src/assets/dhauli.jpg",
-    "/src/assets/chilka.jpg"
+    "/public/puri.jpg",
+    "/public/konark.jpg",
+    "/public/nandankanan.jpg",
+    "/public/dhauli.jpg",
+    "/public/chilka.jpg"
   ],
   "itinerary": [
     {

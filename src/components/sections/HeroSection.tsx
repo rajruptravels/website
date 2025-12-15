@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { FloatingGlobe } from '@/components/3d/FloatingGlobe';
 import { FloatingElements } from '@/components/3d/FloatingElements';
 import { Play, ArrowRight, Link } from 'lucide-react';
-import HeroImage from '/src/assets/destinations/sikkim.jpg';
+import HeroImage from '/public/destinations/sikkim.jpg';
 export const HeroSection: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
