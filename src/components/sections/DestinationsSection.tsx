@@ -4,9 +4,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Star, Clock, ArrowRight } from 'lucide-react';
-import destinationsData from '@/data/destinations.json';
+import destinationsData from '@/data/destinations';
 
-const destinations = destinationsData.destinations;
+const destinations = destinationsData;
 
 export const DestinationsSection: React.FC = () => {
   return (

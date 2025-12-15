@@ -5,7 +5,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Camera, Image as ImageIcon, ArrowRight } from "lucide-react";
-import galleryImages from "../data/destinations.json"
+import destinationsData from '@/data/destinations';
+
+const galleryImages = destinationsData;
 // Sample Gallery Data
 
 const Gallery: React.FC = () => {
@@ -40,7 +42,7 @@ const Gallery: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleryImages.destinations.map((image, index) => (
+            {galleryImages.map((image, index) => (
               <Card
                 key={image.id}
                 className="group relative overflow-hidden rounded-xl hover:shadow-lg transition-all animate-slide-up"

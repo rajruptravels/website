@@ -13,7 +13,9 @@ import { MapPin, Calendar, Users, Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 // ✅ Import destinations data from JSON
-import destinationsData from "@/data/destinations.json";
+import destinationsData from '@/data/destinations';
+
+const destinations = destinationsData;
 
 export const SearchSection: React.FC = () => {
   const navigate = useNavigate();
@@ -51,7 +53,7 @@ export const SearchSection: React.FC = () => {
                     <SelectValue placeholder="Select Destination" />
                   </SelectTrigger>
                   <SelectContent>
-                    {destinationsData.destinations.map((dest) => (
+                    {destinations.map((dest) => (
                       <SelectItem key={dest.id} value={dest.id}>
                         {dest.name}
                       </SelectItem>

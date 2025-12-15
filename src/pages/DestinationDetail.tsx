@@ -6,11 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Star, Clock, MapPin, Check, X } from 'lucide-react';
-import destinationsData from '@/data/destinations.json';
+import destinationsData from '@/data/destinations';
 
 const DestinationDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const destination = destinationsData.destinations.find(dest => dest.id === id);
+  const destination = destinationsData.find(dest => dest.id === id);
 
   if (!destination) {
     return (
