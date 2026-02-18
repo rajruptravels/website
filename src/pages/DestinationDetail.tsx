@@ -19,25 +19,20 @@ import {
   Info
 } from 'lucide-react';
 import destinationsData from '@/data/destinations';
-import { usePageMeta } from '@/hooks/usePageMeta';
+import { PageMeta } from '@/hooks/usePageMeta';
 
 const DestinationDetail = () => {
   const { id } = useParams<{ id: string }>();
   const destination = destinationsData.find(dest => dest.id === id);
   const [activeTab, setActiveTab] = useState("overview");
 
-  usePageMeta({
-    title: destination ? `RajRup Travels | ${destination.name}` : 'Destination Not Found',
-    description: destination?.description || '',
-    keywords: destination?.highlights.join(", ") || '',
-    ogTitle: destination ? `RajRup Travels | ${destination.name}` : '',
-    ogDescription: destination?.description || '',
-    ogImage: destination?.image || '',
-  });
-
   if (!destination) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
+        <PageMeta
+          title="Destination Not Found | RajRup Travels"
+          description="The destination you are looking for does not exist."
+        />
         <Navigation />
         <div className="flex-1 flex flex-col items-center justify-center container mx-auto px-6 py-20 text-center">
           <h1 className="text-4xl font-bold mb-4 text-foreground">Destination Not Found</h1>
@@ -56,6 +51,14 @@ const DestinationDetail = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/10">
+      <PageMeta
+        title={`RajRup Travels | ${destination.name}`}
+        description={destination.description}
+        keywords={destination.highlights.join(", ")}
+        ogTitle={`RajRup Travels | ${destination.name}`}
+        ogDescription={destination.description}
+        ogImage={destination.image}
+      />
       <Navigation />
 
       {/* Hero Section */}
