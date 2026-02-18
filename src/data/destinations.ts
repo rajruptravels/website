@@ -79,9 +79,11 @@ const destinationsData: Destination[] = [
             "Bhutanese Culture & Local Markets"
         ],
         gallery: [
-            "/public/bhutan-paro.jpg",
-            "/public/bhutan-thimphu.jpg",
-            "/public/bhutan-punakha.jpg"
+            "https://hblimg.mmtcdn.com/content/hubble/img/paro/mmt/destination/m_paro-landscape_l_400_640.jpg",
+            "https://www.authenticindiatours.com/app/uploads/2022/04/Rinpung-Dzong-Paro-Bhutan-1400x550-c-default.jpg",
+            "https://www.esikkimtourism.in/wp-content/uploads/2019/10/National-Museum-of-Bhutan-paro.jpg",
+            "https://hblimg.mmtcdn.com/content/hubble/img/thimpu/mmt/destination/m_Thimpu_activity_heritage_l_757_1069.jpg",
+            "https://www.vacationindia.com/wp-content/uploads/2023/04/23-night-view-of-the-trashi-chhu-dzong-in-thimphu-with-rice-fields.jpg"
         ],
         itinerary: [
             {
