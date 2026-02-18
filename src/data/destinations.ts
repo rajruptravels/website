@@ -52,12 +52,93 @@ import amazingThailandImg from "@/assets/destinations/amazing-thailand-tour.jpeg
 import sriLankaImg from "@/assets/destinations/srilanka.jpeg";
 import rajasthanImg from "@/assets/destinations/rajasthan.jpeg";
 import puriImg from "@/assets/destinations/puri.jpg";
-
+import bhutan from "@/assets/destinations/bhutan.jpg"; // Assuming you have a local image for Bhutan as well, since the original data had an external URL.
 /* =========================================================
     Destination Data
 ========================================================= */
 
 const destinationsData: Destination[] = [
+    {
+        id: "bhutan",
+        name: "Bhutan",
+        type: "international",
+        image: bhutan,
+        price: "₹24,999",
+        duration: 6,
+        rating: 4.8,
+        reviews: 176,
+        featured: true,
+        description:
+            "Discover the mystical Himalayan kingdom of Bhutan with serene monasteries, lush valleys, riverside towns, and rich Buddhist culture. A perfect blend of nature, peace, and tradition with guided sightseeing and comfortable stays.",
+        highlights: [
+            "Paro",
+            "Tiger’s Nest Monastery (Taktsang)",
+            "Thimphu",
+            "Punakha Dzong",
+            "Dochula Pass",
+            "Bhutanese Culture & Local Markets"
+        ],
+        gallery: [
+            "/public/bhutan-paro.jpg",
+            "/public/bhutan-thimphu.jpg",
+            "/public/bhutan-punakha.jpg"
+        ],
+        itinerary: [
+            {
+                day: 1,
+                title: "Arrival – Phuentsholing to Thimphu",
+                description:
+                    "Arrival at Phuentsholing. Immigration formalities and transfer to Thimphu. Evening free to explore local markets. Night stay at Thimphu."
+            },
+            {
+                day: 2,
+                title: "Thimphu Sightseeing",
+                description:
+                    "Visit Buddha Dordenma, Memorial Chorten, Tashichho Dzong, and local craft markets. Experience Bhutanese culture and lifestyle. Night stay at Thimphu."
+            },
+            {
+                day: 3,
+                title: "Thimphu to Punakha via Dochula Pass",
+                description:
+                    "Drive through scenic Dochula Pass with panoramic Himalayan views. Visit Punakha Dzong and suspension bridge. Night stay at Punakha."
+            },
+            {
+                day: 4,
+                title: "Punakha to Paro",
+                description:
+                    "Transfer to Paro. Visit Paro Dzong and riverside sightseeing. Evening at leisure. Night stay at Paro."
+            },
+            {
+                day: 5,
+                title: "Tiger’s Nest Monastery Hike",
+                description:
+                    "Hike to the iconic Tiger’s Nest Monastery (Taktsang). Return to hotel and relax. Night stay at Paro."
+            },
+            {
+                day: 6,
+                title: "Paro – Departure",
+                description:
+                    "After breakfast, transfer to Phuentsholing for departure. Tour ends with memorable experiences."
+            }
+        ],
+        inclusions: [
+            "3 Star hotel accommodation",
+            "Breakfast and dinner included",
+            "English speaking guide",
+            "Comfortable transportation",
+            "SDF included (₹1200 per person per day)",
+            "All sightseeing as per itinerary",
+            "Driver allowance, food, and accommodation",
+            "24x7 travel assistance"
+        ],
+        exclusions: [
+            "Flights/Train tickets",
+            "Lunch",
+            "Personal expenses",
+            "Travel insurance",
+            "Any activity not mentioned in inclusions"
+        ]
+    },
     {
         id: "sikkim",
         name: "Sikkim",
